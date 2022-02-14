@@ -1642,6 +1642,7 @@ ul.navbar-nav > li.header-get-a-quote:hover > a:after{
    width: 31%;
 }
 
+
 /*-- Featured Tab --*/
 
 .featured-tab{
@@ -1731,6 +1732,10 @@ ul.navbar-nav > li.header-get-a-quote:hover > a:after{
    font-size: 20px;
 }
 
+.featured-tab-image{
+   height: 200px;
+}
+
 /* Tab services */
 
 .featured-tab.tab-services .nav-tabs > li > a{
@@ -1813,6 +1818,7 @@ ul.navbar-nav > li.header-get-a-quote:hover > a:after{
 
 /* Services
 ================================================== */
+
 
 
 /* Service box */
@@ -2911,10 +2917,14 @@ img.testimonial-thumb{
 .copyright{
    background: #EB5160;
    color: #333333;
-   padding: 40px 0;
+   padding: 20px 0;
    position: relative;
    z-index: 1;
    font-weight: 500;
+}
+
+.copyright-info{
+   font-weight: 900;
 }
 
 .footer-menu{
@@ -2929,7 +2939,7 @@ img.testimonial-thumb{
 
 .footer-menu ul.nav li a{
    background: none;
-   color: #333333;
+   color: black;
    padding: 0;
 }
 
