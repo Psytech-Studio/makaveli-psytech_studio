@@ -1210,6 +1210,17 @@ ul.navbar-nav > li.header-get-a-quote:hover > a:after{
    border:2px solid transparent;
 }
 
+/* Images that replaced slider */
+.home-image{
+   width: 100%;
+}
+.margin-space{
+   padding: 20px;
+}
+
+.ts-features{
+   padding-bottom: 20px;
+}
 /* Carousel control */
 
 .carousel-indicators li{
@@ -1757,7 +1768,7 @@ ul.navbar-nav > li.header-get-a-quote:hover > a:after{
    padding: 100px 0;
    color: #ffffff;
    background-color: #EB5160;
-   background-image: url(../images/parallax1.jpg);
+   background-image: url(../images/home/banner.jpg);
    background-repeat: no-repeat;
    background-size: cover;
    background-attachment: fixed;
@@ -2678,7 +2689,7 @@ img.testimonial-thumb{
 
 .footer{
    background-color: #EB5160;
-   background-image: url(../images/parallax3.jpg);
+   background-image: url(../images/home/banner.jpg);
    background-repeat: no-repeat;
    background-size: cover;
    background-attachment: fixed;
@@ -3091,6 +3102,7 @@ img.testimonial-thumb{
     -ms-filter: grayscale(100%);
     -o-filter: grayscale(100%);
     filter: grayscale(100%);
+    max-height: 120px;
 }
 
 .partner-logo:hover img {
