@@ -13,6 +13,7 @@
 	6. Counter
 	7. Contact form
 	8. Back to top
+	9. Added By PsyTech Studio
   
 */
 
@@ -33,8 +34,8 @@ jQuery(function($) {
 	/*  Fixed header
 	/* ----------------------------------------------------------- */
 
-	$(window).on('scroll', function(){
-		if ( $(window).scrollTop() > 70 ) {
+	$(window).on('scroll load', function(){
+		if ( $(window).scrollTop() > 270 ) {
 			$('.site-navigation, .header-white, .header').addClass('navbar-fixed');
 		} else {
 			$('.site-navigation, .header-white, .header').removeClass('navbar-fixed');
@@ -51,14 +52,6 @@ jQuery(function($) {
 	});
 
 
-	/* ----------------------------------------------------------- */
-	/*  Main slideshow
-	/* ----------------------------------------------------------- */
-
-		$('#main-slide').carousel({
-			pause: true,
-			interval: 100000,
-		});
 
 
 	/* ----------------------------------------------------------- */
@@ -332,3 +325,56 @@ jQuery(function($) {
 		});
 
 });
+
+// *************Section 9 ***************************************************//
+
+	/* ----------------------------------------------------------- */
+	/*  Main slideshow
+	/* ----------------------------------------------------------- */
+
+	let live_image = [
+						document.getElementById('home-imageOne'), 
+						document.getElementById('home-imageTwo'),
+						document.getElementById('home-imageThree')
+					]
+	let images =	[	
+						'images/services/mak1.jpg',
+						'images/services/mak2.jpg',
+						'images/services/mak3.jpg',
+						'images/services/mak4.jpg',
+						'images/services/mak5.jpg',
+						'images/services/mak6.jpg',
+						'images/services/mak7.jpg',
+						'images/services/mak8.jpg',
+						'images/services/mak9.jpg',
+						'images/services/mak10.jpg',
+						'images/services/mak11.jpg',
+						'images/services/mak12.jpg',
+						'images/services/mak13.jpg',
+						'images/services/mak14.jpg',
+						'images/services/mak15.jpg',
+						'images/services/mak16.jpg',
+						'images/services/mak17.jpg',
+						'images/services/mak18.jpg',
+						'images/services/mak19.jpg',
+					]
+
+	let interval = 2400;
+	let delay = interval / 3;
+	
+	setInterval(function(){
+		let randomOne = Math.floor(Math.random() * 18);
+		live_image[0].src = images[randomOne];
+	}, interval);
+	setTimeout(() => {  
+		setInterval(function(){
+			let randomTwo = Math.floor(Math.random() * 20);
+			live_image[1].src = images[randomTwo];
+		}, interval);
+	 }, delay);
+	 setTimeout(() => {  
+		setInterval(function(){
+			let randomThree = Math.floor(Math.random() * 20);
+			live_image[2].src = images[randomThree];
+		}, interval);
+	 }, (delay + delay));

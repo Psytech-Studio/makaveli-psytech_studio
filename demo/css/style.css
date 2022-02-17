@@ -30,6 +30,7 @@
 19.   News Single
 20.   Sidebar
 21.   Error page
+22.   Added By PsyTech Studio
   
 */
 
@@ -1071,6 +1072,8 @@ ul.navbar-nav > li.header-get-a-quote:hover > a:after{
    position: relative;
    content: no-close-quote;
 }
+
+
 
 /* Slider
 ================================================== */
@@ -3956,4 +3959,60 @@ label{
 
 .nav-style-boxed.boxed-full .navbar-collapse {
     padding-left: 0;
+}
+
+
+
+/************************** Section 22 *************************************************** */
+
+/* Gallery */
+
+.zoom_gallery{
+   transition: transform 0.3s; /* Animation */
+   width: 100%;
+   margin: 15px;
+   border-radius: 18px;
+}
+.zoom_gallery:hover{
+   transform: scale(1.05);
+}
+.row_gallery {
+   display: flex;
+   flex-wrap: wrap;
+   padding: 0 4px;
+ }
+ 
+ /* Create four equal columns that sits next to each other */
+ .column_gallery {
+   flex: 25%;
+   max-width: 25%;
+   padding: 0 4px;
+ }
+ 
+ .column_gallery img {
+   margin-top: 8px;
+   vertical-align: middle;
+   width: 100%;
+ }
+ 
+ /* Responsive layout - makes a two column-layout instead of four columns */
+ @media screen and (max-width: 800px) {
+   .column_gallery {
+     flex: 50%;
+     max-width: 50%;
+   }
+ }
+ 
+ /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+ @media screen and (max-width: 600px) {
+   .column_gallery {
+     flex: 100%;
+     max-width: 100%;
+   }
+ }
+
+
+.justify-content-center{
+   justify-content: center;
+   text-align: center;
 }
